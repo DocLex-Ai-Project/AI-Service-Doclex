@@ -1,28 +1,36 @@
 from langchain_community.document_loaders import TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings
 import os
-embedding = OllamaEmbeddings(model="nomic-embed-text")
 
+DATA_PATH = "data/"
+
+documents = []
+
+# Load files
+for file in os.listdir(DATA_PATH):
+    if file.endswith(".txt"):
+        loader = TextLoader(os.path.join(DATA_PATH, file))
+        documents.extend(loader.load())
+
+print(f"Loaded {len(documents)} documents")
+
+# Split text
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
+    chunk_size=800,
     chunk_overlap=100
 )
 
-docs = []
+docs = splitter.split_documents(documents)
 
-data_folder = "./data"
+print(f"Split into {len(docs)} chunks")
 
-for file in os.listdir(data_folder):
-    if file.endswith(".txt"):
-        loader = TextLoader(os.path.join(data_folder, file))
-        documents = loader.load()
-        chunks = splitter.split_documents(documents)
-        docs.extend(chunks)
+# Embeddings
+embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
-vector_db = FAISS.from_documents(docs, embedding)
+# FAISS
+db = FAISS.from_documents(docs, embeddings)
+db.save_local("faiss_index")
 
-vector_db.save_local("faiss_index")
-
-print("Legal dataset loaded into FAISS")
+print("✅ FAISS index created successfully")

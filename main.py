@@ -2,22 +2,36 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from langchain_community.llms import Ollama
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from rag import retrieve_context
+from rag import retrieve_context, ask_ai
 import json
 import re
 
 app = FastAPI()
 
+# LLM instance
 llm = Ollama(model="llama3:8b")
 
-class RequestData(BaseModel):
+
+# =========================
+# 📄 REQUEST MODELS
+# =========================
+
+class AnalyzeRequest(BaseModel):
     text: str
 
 
-@app.post("/analyze")
-def analyze(data: RequestData):
+class ChatRequest(BaseModel):
+    message: str
 
-    print("API HIT")
+
+# =========================
+# 📄 DOCUMENT ANALYSIS API
+# =========================
+
+@app.post("/analyze")
+def analyze(data: AnalyzeRequest):
+
+    print("API HIT /analyze")
 
     # 🔹 Step 1: Chunking
     splitter = RecursiveCharacterTextSplitter(
@@ -26,19 +40,19 @@ def analyze(data: RequestData):
     )
 
     chunks = splitter.split_text(data.text)
-    chunks = chunks[:3]  # limit for performance
+    chunks = chunks[:3]  # performance limit
     combined_text = "\n".join(chunks)
 
     print("Chunks used:", len(chunks))
 
-    # 🔹 Step 2: RAG context
+    # 🔹 Step 2: Retrieve legal context (FAISS only)
     context = retrieve_context(combined_text)
 
-    # 🔹 Step 3: STRONG PROMPT (LLM RULES)
+    # 🔹 Step 3: STRONG PROMPT
     prompt = f"""
 You are a strict legal AI system.
 
-Follow these rules strictly:
+Follow rules strictly:
 
 1. If consideration is missing → contract is VOID → score must be below 40
 2. If illegal clause exists → riskLevel = HIGH
@@ -62,7 +76,7 @@ Return ONLY JSON:
 
     response = llm.invoke(prompt)
 
-    # 🔹 Step 4: Extract JSON
+    # 🔹 Step 4: Extract JSON safely
     json_match = re.search(r"\{.*\}", response, re.DOTALL)
 
     if not json_match:
@@ -82,23 +96,19 @@ Return ONLY JSON:
     risk_level = parsed.get("riskLevel", "LOW")
     short_summary = parsed.get("summary", "")
 
-    # 🔴 Step 6: BACKEND VALIDATION (VERY IMPORTANT)
+    # 🔴 Step 6: BACKEND VALIDATION RULES
 
-    # Rule: missing consideration → VOID contract
     if "consideration" in missing_fields:
         score = min(score, 40)
         risk_level = "HIGH"
 
-    # Rule: illegal clause detection
     if "illegal" in short_summary.lower() or "court" in short_summary.lower():
         score = min(score, 30)
         risk_level = "HIGH"
 
-    # Rule: many missing clauses
     if len(missing_fields) >= 4:
         score = min(score, 50)
 
-    # Clean formatting
     missing_fields = [f.title() for f in missing_fields]
 
     # 🔹 Step 7: Dynamic summary length
@@ -113,7 +123,7 @@ Return ONLY JSON:
     else:
         target_words = 500
 
-    # 🔹 Step 8: FINAL SUMMARY (2nd call)
+    # 🔹 Step 8: Final summary (2nd LLM call)
     final_prompt = f"""
 You are a legal AI assistant.
 
@@ -140,4 +150,17 @@ Return ONLY plain text.
         "missingFields": missing_fields,
         "riskLevel": risk_level,
         "summary": final_summary.strip()
+    }
+
+# chatbot ready application 
+
+@app.post("/ai/chat")
+def chat(req: ChatRequest):
+
+    print("API HIT /ai/chat")
+
+    response = ask_ai(req.message)
+
+    return {
+        "response": response
     }
