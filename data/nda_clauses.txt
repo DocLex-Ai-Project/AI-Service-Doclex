@@ -1,0 +1,17 @@
+DOCUMENT: Non-Disclosure Agreement (NDA)
+
+REQUIRED CLAUSES:
+- Definition of confidential information
+- Obligations of receiving party
+- Duration of confidentiality
+- Exclusions
+- Remedies for breach
+
+RULES:
+- NDA must clearly define what is confidential
+- Time duration must be specified
+
+RISK DETECTION:
+- No duration → weak agreement
+- No penalty clause → LOW enforceability
+- Vague definitions → HIGH risk

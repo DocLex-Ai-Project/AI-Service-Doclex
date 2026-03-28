@@ -1,0 +1,28 @@
+LAW: Indian Contract Act 1872
+
+VALID CONTRACT REQUIREMENTS:
+- Offer and Acceptance
+- Lawful Consideration
+- Free Consent
+- Competent Parties
+- Lawful Object
+
+RULES:
+- Agreement without consideration is VOID
+- Contract with minor is INVALID
+- Coercion or fraud makes contract VOIDABLE
+
+IMPORTANT LEGAL PRINCIPLES:
+- Both parties must agree freely
+- Terms must be clear and lawful
+
+CLAUSES REQUIRED IN CONTRACT:
+- Payment terms
+- Termination clause
+- Liability clause
+- Jurisdiction clause
+
+RISK DETECTION:
+- Missing consideration → HIGH RISK
+- Illegal purpose → INVALID CONTRACT
+- No termination clause → MEDIUM RISK
