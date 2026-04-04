@@ -15,13 +15,13 @@ vector_db = FAISS.load_local(
 llm = ChatOllama(model="llama3:8b")
 
 
-# ✅ ADD THIS FUNCTION (IMPORTANT)
+#  apn ya function madhe Context Retreive Kela FIASS db madhun
 def retrieve_context(query: str):
     docs = vector_db.similarity_search(query, k=3)
     return "\n\n".join([doc.page_content for doc in docs])
 
 
-# ✅ EXISTING FUNCTION (KEEP)
+# Query function chat bot sathi
 def ask_ai(query: str):
     docs = vector_db.similarity_search(query, k=3)
 
@@ -30,7 +30,7 @@ def ask_ai(query: str):
     prompt = f"""
 You are an Indian legal AI assistant.
 
-- Understand English, Hindi, Marathi
+- Understand English, Hindi
 - Reply in same language
 
 Follow rules strictly:

@@ -1,20 +1,28 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException
 from pydantic import BaseModel
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from rag import retrieve_context, ask_ai
+from dotenv import load_dotenv
+import os
 import json
 import re
 
+
+load_dotenv()
+
 app = FastAPI()
 
-# LLM instance
-llm = Ollama(model="llama3:8b")
+API_SECRET = os.getenv("AI_SECRET")
 
 
-# =========================
-# 📄 REQUEST MODELS
-# =========================
+llm = OllamaLLM(model="llama3:8b")
+
+
+def verify_token(authorization: str = Header(None)):
+    if authorization != f"Bearer {API_SECRET}":
+        raise HTTPException(status_code=401, detail="Unauthorized by ai service")
+
 
 class AnalyzeRequest(BaseModel):
     text: str
@@ -24,143 +32,110 @@ class ChatRequest(BaseModel):
     message: str
 
 
-# =========================
-# 📄 DOCUMENT ANALYSIS API
-# =========================
 
 @app.post("/analyze")
-def analyze(data: AnalyzeRequest):
+def analyze(data: AnalyzeRequest, authorization: str = Header(None)):
 
-    print("API HIT /analyze")
+    verify_token(authorization)
 
-    # 🔹 Step 1: Chunking
+    # Large Text will be spilited for chucking
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=800,
         chunk_overlap=100
     )
+    print("This is data come form backend node",data)
 
-    chunks = splitter.split_text(data.text)
-    chunks = chunks[:3]  # performance limit
+    chunks = splitter.split_text(data.text)[:3]
     combined_text = "\n".join(chunks)
 
-    print("Chunks used:", len(chunks))
-
-    # 🔹 Step 2: Retrieve legal context (FAISS only)
+    #  RAG context
     context = retrieve_context(combined_text)
+    print()
 
-    # 🔹 Step 3: STRONG PROMPT
     prompt = f"""
-You are a strict legal AI system.
+You are an expert legal AI system.
 
-Follow rules strictly:
+Return ONLY valid JSON. No markdown or explanation.
 
-1. If consideration is missing → contract is VOID → score must be below 40
-2. If illegal clause exists → riskLevel = HIGH
-3. If major clauses missing → reduce score significantly
-4. Ensure score matches reasoning (NO contradictions)
+Scoring Guidelines:
+- 90–100 → Complete, strong legal document
+- 70–89 → Good but missing minor clauses
+- 50–69 → Moderate issues, missing important clauses
+- 30–49 → High risk, many important clauses missing
+- 0–29 → Invalid or legally unusable document
 
-Relevant legal context:
+Rules:
+- NEVER return 0 unless document is empty or completely invalid
+- Missing 1–2 clauses → small reduction
+- Missing 3–4 clauses → moderate reduction
+- Missing critical clauses (liability, indemnity, dispute resolution) → reduce score but NOT below 40 unless many are missing
+
+Required Clauses:
+- Scope of Services
+- Payment Terms
+- Duration
+- Confidentiality
+- Termination
+- Governing Law
+- Liability Clause
+- Indemnity Clause
+- Dispute Resolution
+
+Output format:
+{{
+  "score": number,
+  "missingFields": ["string"],
+  "riskLevel": "LOW" | "MEDIUM" | "HIGH",
+  "summary": "short explanation",
+  "decision": "APPROVE" | "REJECT",
+  "feedback": "short suggestion"
+}}
+
+Context:
 {context}
 
 Document:
 {combined_text}
-
-Return ONLY JSON:
-{{
-  "score": number (0-100),
-  "missingFields": [],
-  "riskLevel": "LOW | MEDIUM | HIGH",
-  "summary": "short explanation (max 40 words)"
-}}
 """
 
+   # call for ll,
     response = llm.invoke(prompt)
+    print("RAW LLM RESPONSE:", response)
 
-    # 🔹 Step 4: Extract JSON safely
-    json_match = re.search(r"\{.*\}", response, re.DOTALL)
-
-    if not json_match:
-        return {"error": "Invalid AI response", "raw": response}
-
+ 
     try:
+        json_match = re.search(r"\{[\s\S]*\}", response)
+
+        if not json_match:
+            raise ValueError("No JSON found in response")
+
         parsed = json.loads(json_match.group(0))
-    except:
-        return {"error": "JSON parsing failed", "raw": response}
 
-    # 🔹 Step 5: Normalize values
-    score = parsed.get("score", 0)
-    if score <= 1:
-        score *= 100
+        # 🔥 SAFETY: Prevent unrealistic 0 score
+        if parsed.get("score") is not None:
+            parsed["score"] = max(parsed["score"], 20)
 
-    missing_fields = list(set([f.strip().lower() for f in parsed.get("missingFields", [])]))
-    risk_level = parsed.get("riskLevel", "LOW")
-    short_summary = parsed.get("summary", "")
+    except Exception as e:
+        print(" This is Error from Ai service Please check json error:", e)
 
-    # 🔴 Step 6: BACKEND VALIDATION RULES
+        return {
+            "score": None,
+            "riskLevel": None,
+            "missingFields": [],
+            "summary": None,
+            "decision": None,
+            "feedback": None,
+            "raw": response  # Remove natr fakt 
+        }
 
-    if "consideration" in missing_fields:
-        score = min(score, 40)
-        risk_level = "HIGH"
+    return parsed
 
-    if "illegal" in short_summary.lower() or "court" in short_summary.lower():
-        score = min(score, 30)
-        risk_level = "HIGH"
-
-    if len(missing_fields) >= 4:
-        score = min(score, 50)
-
-    missing_fields = [f.title() for f in missing_fields]
-
-    # 🔹 Step 7: Dynamic summary length
-    input_length = len(data.text.split())
-
-    if input_length < 200:
-        target_words = 80
-    elif input_length < 1000:
-        target_words = 150
-    elif input_length < 3000:
-        target_words = 300
-    else:
-        target_words = 500
-
-    # 🔹 Step 8: Final summary (2nd LLM call)
-    final_prompt = f"""
-You are a legal AI assistant.
-
-Generate a professional legal summary.
-
-STRICT RULES:
-- No headings or bullet points
-- Clear paragraph format
-- Legal tone
-- Focus on risks and missing clauses
-- Keep around {target_words} words
-
-Text:
-{short_summary}
-
-Return ONLY plain text.
-"""
-
-    final_summary = llm.invoke(final_prompt)
-
-    # 🔹 Final response
-    return {
-        "score": round(score, 2),
-        "missingFields": missing_fields,
-        "riskLevel": risk_level,
-        "summary": final_summary.strip()
-    }
-
-# chatbot ready application 
 
 @app.post("/ai/chat")
-def chat(req: ChatRequest):
+def chat(req: ChatRequest, authorization: str = Header(None)):
 
-    print("API HIT /ai/chat")
+    verify_token(authorization)
 
     response = ask_ai(req.message)
 
-    return {
-        "response": response
-    }
+    return {"response": response}

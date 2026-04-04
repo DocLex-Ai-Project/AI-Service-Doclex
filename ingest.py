@@ -16,7 +16,7 @@ for file in os.listdir(DATA_PATH):
 
 print(f"Loaded {len(documents)} documents")
 
-# Split text
+
 splitter = RecursiveCharacterTextSplitter(
     chunk_size=800,
     chunk_overlap=100
@@ -26,11 +26,11 @@ docs = splitter.split_documents(documents)
 
 print(f"Split into {len(docs)} chunks")
 
-# Embeddings
+
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
 # FAISS
 db = FAISS.from_documents(docs, embeddings)
 db.save_local("faiss_index")
 
-print("✅ FAISS index created successfully")
+print("FAISS index created successfully")
