@@ -49,7 +49,7 @@ def analyze(data: AnalyzeRequest, authorization: str = Header(None)):
     combined_text = "\n".join(chunks)
 
     #  RAG context
-    context = retrieve_context(combined_text)
+    context = retrieve_context("legal document validation rules " + combined_text)
     print()
 
     prompt = f"""
