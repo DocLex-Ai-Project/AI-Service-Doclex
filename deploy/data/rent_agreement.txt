@@ -1,0 +1,18 @@
+DOCUMENT: Rent Agreement (India)
+
+REQUIRED CLAUSES:
+- Tenant and landlord details
+- Rent amount
+- Security deposit
+- Duration of lease
+- Maintenance responsibility
+- Termination notice period
+
+RULES:
+- Agreement must be signed by both parties
+- Stamp duty may be required
+
+RISK DETECTION:
+- No duration → INVALID agreement
+- No rent amount → incomplete contract
+- No notice period → dispute risk

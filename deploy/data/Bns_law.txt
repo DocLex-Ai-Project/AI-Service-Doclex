@@ -1,0 +1,338 @@
+ACT: Bharatiya Nyaya Sanhita (BNS)
+
+ACT: Bharatiya Nyaya Sanhita (BNS)
+
+SECTION: 1
+TITLE: Short title, commencement and application
+
+CONTENT:
+Defines applicability of BNS across India and outside India for Indian citizens.
+
+KEY POINTS:
+- Applies within India
+- Applies to Indian citizens abroad
+- Includes cyber offences targeting India
+
+RISK:
+- Cross-border crimes are punishable
+
+
+SECTION: DEFINITIONS
+
+TITLE: Important Legal Definitions
+
+KEY TERMS:
+- Document: Includes written, digital, electronic records
+- Fraudulently: Act done with intent to deceive
+- Dishonestly: Causing wrongful gain or loss
+- Illegal: Anything prohibited by law
+
+RISK:
+- Fake digital documents → HIGH RISK
+- Misuse of legal terms → HIGH RISK
+
+
+SECTION: 4
+TITLE: Punishments
+
+CONTENT:
+Types of punishments under BNS.
+
+KEY POINTS:
+- Death penalty
+- Life imprisonment
+- Simple / rigorous imprisonment
+- Fine
+- Community service
+
+RISK:
+- Severe crimes → extreme penalties
+
+
+SECTION: 5
+TITLE: Commutation of sentence
+
+CONTENT:
+Government can reduce or change punishment.
+
+KEY POINTS:
+- Central/State government authority
+- No consent required
+
+RISK:
+- Legal authority required
+
+
+SECTION: 8
+TITLE: Fine and imprisonment rules
+
+CONTENT:
+Defines fine limits and default imprisonment.
+
+KEY POINTS:
+- Fine can be unlimited but reasonable
+- Default imprisonment allowed
+- Depends on fine amount
+
+RISK:
+- Non-payment → imprisonment
+
+
+SECTION: 14
+TITLE: Act done by mistake of fact
+
+CONTENT:
+No offence if person believes in good faith they are bound by law.
+
+KEY POINTS:
+- Mistake of fact allowed
+- Not mistake of law
+
+RISK:
+- Wrong legal assumption → NOT protected
+
+
+SECTION: 17
+TITLE: Act justified by law
+
+CONTENT:
+No offence if action is legally justified.
+
+KEY POINTS:
+- Good faith protection
+- Legal authority required
+
+RISK:
+- Misuse of justification → legal issue
+
+
+SECTION: 18
+TITLE: Accident
+
+CONTENT:
+No offence if act is accidental without criminal intent.
+
+KEY POINTS:
+- Must be lawful act
+- Proper care required
+
+RISK:
+- Negligence → becomes offence
+
+
+SECTION: 19
+TITLE: Preventing greater harm
+
+CONTENT:
+Act causing harm is not offence if done to prevent greater harm.
+
+KEY POINTS:
+- Good faith required
+- Must be necessary action
+
+RISK:
+- Misuse → legal liability
+
+
+SECTION: 20
+TITLE: Child under 7
+
+CONTENT:
+Child below 7 cannot commit offence.
+
+RISK:
+- No criminal liability
+
+
+SECTION: 21
+TITLE: Child 7–12
+
+CONTENT:
+Child not liable if lacks maturity.
+
+RISK:
+- Case-based judgement
+
+
+SECTION: 22
+TITLE: Unsound mind
+
+CONTENT:
+No offence if person mentally incapable.
+
+RISK:
+- Must prove mental condition
+
+
+SECTION: 28
+TITLE: Invalid consent
+
+CONTENT:
+Consent is invalid if:
+- Given under fear
+- Given under misunderstanding
+- Person not mentally capable
+
+RISK:
+- Forced agreement → INVALID
+- Fraud consent → HIGH RISK
+SECTION: 316
+TITLE: Criminal Breach of Trust
+
+CONTENT:
+A person commits criminal breach of trust if they are entrusted with property and dishonestly misappropriate or use it for personal gain or violate legal directions.
+
+KEY POINTS:
+- Property must be entrusted
+- Dishonest intention required
+- Misuse or conversion of property
+- Violation of legal contract or law
+
+PUNISHMENT:
+- Up to 5 years imprisonment or fine
+- Up to 7 years if special roles (carrier, clerk, etc.)
+- Up to life imprisonment for public servant or banker
+
+RISK:
+- Misuse of entrusted funds → HIGH RISK
+- Violation of agreement → HIGH RISK
+- Employee fund misuse → HIGH RISK
+
+---
+
+SECTION: 318
+TITLE: Cheating
+
+CONTENT:
+Cheating involves deceiving a person to deliver property or act in a way that causes damage or loss.
+
+KEY POINTS:
+- Deception required
+- Dishonest intention
+- Inducing delivery of property
+- Causing harm (financial, reputation, etc.)
+
+PUNISHMENT:
+- Up to 3 years imprisonment or fine
+- Up to 5 years if legal duty violated
+- Up to 7 years for serious cheating
+
+RISK:
+- False promises → HIGH RISK
+- Fake representation → HIGH RISK
+- Fraudulent agreements → HIGH RISK
+
+---
+
+SECTION: 336
+TITLE: Forgery
+
+CONTENT:
+Forgery means creating false documents or electronic records to cause harm, support false claims, or commit fraud.
+
+KEY POINTS:
+- False document creation
+- Intent to deceive
+- Use for fraud or contract
+
+PUNISHMENT:
+- Up to 2 years imprisonment or fine
+- Up to 7 years if used for cheating
+- Up to 3 years if harms reputation
+
+RISK:
+- Fake signature → HIGH RISK
+- Altered contract → HIGH RISK
+- Fake digital record → HIGH RISK
+
+---
+
+SECTION: 337
+TITLE: Forgery of Public Documents
+
+CONTENT:
+Forgery of official records, identity documents, or government-issued documents.
+
+KEY POINTS:
+- Court records
+- Aadhaar, voter ID
+- Public registers
+
+PUNISHMENT:
+- Up to 7 years imprisonment and fine
+
+RISK:
+- Fake ID → HIGH RISK
+- Fake government documents → HIGH RISK
+
+---
+
+SECTION: 338
+TITLE: Forgery of Valuable Security
+
+CONTENT:
+Forgery involving financial instruments like securities, wills, or authority documents.
+
+KEY POINTS:
+- Financial fraud
+- Fake will or transfer documents
+
+PUNISHMENT:
+- Life imprisonment or up to 10 years + fine
+
+RISK:
+- Financial document fraud → VERY HIGH RISK
+
+---
+
+SECTION: 339
+TITLE: Possession of Forged Document
+
+CONTENT:
+Possessing forged documents with intent to use them as genuine.
+
+KEY POINTS:
+- Knowledge of forgery
+- Intent to use
+
+PUNISHMENT:
+- Up to 7 years or life depending on type
+
+RISK:
+- Holding fake documents → HIGH RISK
+
+---
+
+SECTION: 340
+TITLE: Using Forged Document
+
+CONTENT:
+Using forged documents knowingly as genuine.
+
+KEY POINTS:
+- Knowledge of forgery
+- Intentional use
+
+PUNISHMENT:
+- Same as forgery
+
+RISK:
+- Using fake agreement → HIGH RISK
+
+---
+
+SECTION: 341
+TITLE: Counterfeit Seal or Instrument
+
+CONTENT:
+Making or possessing tools used for forgery.
+
+KEY POINTS:
+- Fake seals
+- Forgery tools
+
+PUNISHMENT:
+- Up to life imprisonment or 7 years
+
+RISK:
+- Possession of fake seal → HIGH RISK

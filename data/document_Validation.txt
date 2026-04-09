@@ -1,0 +1,15 @@
+DOCUMENT VALIDATION RULES
+
+Required Fields:
+- Name
+- Date
+- Signature
+- Official seal
+
+Validation:
+- Missing signature → INVALID
+- Missing date → INCOMPLETE
+- Mismatched name → SUSPICIOUS
+
+Risk:
+- Missing multiple fields → HIGH RISK

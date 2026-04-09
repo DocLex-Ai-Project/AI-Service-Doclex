@@ -1,0 +1,403 @@
+ACT: Companies Act 2013
+
+SECTION: 40
+TITLE: Securities to be dealt with in stock exchanges
+
+CONTENT:
+Every company making public offer must apply to recognized stock exchange before issuing securities.
+
+KEY POINTS:
+- Must get stock exchange approval
+- Must mention exchange in prospectus
+- Money must be kept in separate bank account
+- Refund if allotment fails
+
+PENALTY:
+Company: ₹5 lakh – ₹50 lakh
+Officer: ₹50,000 – ₹3 lakh
+
+RISK:
+- No stock exchange approval → INVALID ISSUE
+- Misuse of funds → LEGAL PENALTY
+
+ACT: Companies Act 2013
+
+SECTION: 39
+TITLE: Allotment of Securities
+
+CONTENT:
+Company cannot allot securities unless minimum subscription amount is received.
+
+KEY POINTS:
+- Minimum subscription required
+- At least 5% application money
+- Refund if not received within 30 days
+- Must file return of allotment
+
+PENALTY:
+₹1000 per day or ₹1 lakh max
+
+RISK:
+- No minimum subscription → INVALID ALLOTMENT
+- No filing → PENALTY
+
+
+ACT: Companies Act 2013
+
+SECTION: 40
+TITLE: Securities to be dealt in stock exchanges
+
+CONTENT:
+Company must get stock exchange permission before public offer.
+
+KEY POINTS:
+- Apply to stock exchange
+- Mention exchange in prospectus
+- Keep money in separate account
+- Refund if no allotment
+
+PENALTY:
+₹5 lakh – ₹50 lakh
+
+RISK:
+- No approval → ILLEGAL OFFER
+
+ACT: Companies Act 2013
+
+SECTION: 43
+TITLE: Types of Share Capital
+
+CONTENT:
+Share capital is of two types: equity and preference.
+
+KEY POINTS:
+- Equity shares → voting rights
+- Preference shares → fixed dividend
+- Preference has priority in repayment
+
+RISK:
+- Misclassification → compliance issue
+
+ACT: Companies Act 2013
+
+SECTION: 45
+TITLE: Numbering of Shares
+
+CONTENT:
+Each share must have a unique number.
+
+KEY POINTS:
+- Applies to physical shares
+- Exception for demat shares
+
+RISK:
+- No numbering → invalid record
+
+ACT: Companies Act 2013
+
+SECTION: 47
+TITLE: Voting Rights
+
+CONTENT:
+Equity shareholders have voting rights proportional to shares.
+
+KEY POINTS:
+- Equity → full voting rights
+- Preference → limited voting rights
+- If dividend unpaid → full voting rights
+
+RISK:
+- Denying vote → legal violation
+
+
+ACT: Companies Act 2013
+
+SECTION: 48
+TITLE: Variation of Shareholder Rights
+
+CONTENT:
+Rights of shareholders can be changed with 3/4 consent.
+
+KEY POINTS:
+- Special resolution required
+- Tribunal approval possible
+- Must file with registrar
+
+RISK:
+- No consent → INVALID CHANGE
+
+ACT: Companies Act 2013
+
+SECTION: 62
+TITLE: Further Issue of Share Capital
+
+CONTENT:
+New shares must be offered to existing shareholders first.
+
+KEY POINTS:
+- Rights issue
+- ESOP allowed
+- Special resolution required
+
+RISK:
+- Ignoring existing shareholders → illegal issue
+
+ACT: Companies Act 2013
+
+SECTION: 63
+TITLE: Bonus Shares
+
+CONTENT:
+Company can issue bonus shares from reserves.
+
+KEY POINTS:
+- From free reserves
+- No default allowed
+- Cannot replace dividend
+
+RISK:
+- Improper reserve use → violation\
+ACT: Companies Act 2013
+
+SECTION: 64
+TITLE: Notice of Alteration
+
+CONTENT:
+Company must inform registrar after capital change.
+
+KEY POINTS:
+- File within 30 days
+- Include updated memorandum
+
+PENALTY:
+₹500 per day
+
+RISK:
+- Delay → penalty
+
+
+ACT: Companies Act, 2013
+
+==============================
+PRELIMINARY
+==============================
+
+SECTION: 1
+TITLE: Short Title and Application
+
+CONTENT:
+Defines the applicability of the Companies Act, 2013 across India and its implementation.
+
+KEY POINTS:
+- Applies to all companies in India
+- Covers private, public, OPC, and foreign companies
+
+RISK:
+- Non-compliance → legal penalties
+
+---
+
+SECTION: 2
+TITLE: Definitions
+
+CONTENT:
+Defines key corporate terms used in the Act.
+
+KEY TERMS:
+- Company: Registered legal entity
+- Holding Company: Controls another company
+- Subsidiary: Controlled by holding company
+- Promoter: Person controlling company formation
+- Private Company: Max 200 members, restricted shares
+
+RISK:
+- Misclassification → legal issues
+
+---
+
+==============================
+INCORPORATION
+==============================
+
+SECTION: 3
+TITLE: Formation of Company
+
+CONTENT:
+Specifies types of companies and minimum members required.
+
+KEY POINTS:
+- Private → 2 members
+- Public → 7 members
+- OPC → 1 member
+
+RISK:
+- Wrong structure → compliance risk
+
+---
+
+SECTION: 4
+TITLE: Memorandum of Association (MoA)
+
+CONTENT:
+MoA defines company structure and objectives.
+
+KEY POINTS:
+- Name clause
+- Object clause
+- Liability clause
+- Capital clause
+
+RISK:
+- Invalid object → company invalid
+
+---
+
+SECTION: 7
+TITLE: Incorporation Process
+
+CONTENT:
+Company is formed by filing SPICe+ and required documents.
+
+KEY POINTS:
+- Certificate of Incorporation = legal birth
+- Includes PAN, TAN
+
+RISK:
+- Wrong filing → rejection
+
+---
+
+SECTION: 8
+TITLE: Non-Profit Company
+
+CONTENT:
+Companies formed for charitable purposes.
+
+KEY POINTS:
+- No profit distribution
+- Used for NGO activities
+
+RISK:
+- Profit misuse → violation
+
+---
+
+SECTION: 12
+TITLE: Registered Office
+
+CONTENT:
+Company must have a registered office within 30 days.
+
+RISK:
+- No registered office → penalty
+
+---
+
+==============================
+PROSPECTUS & FUNDING
+==============================
+
+SECTION: 26
+TITLE: Prospectus Requirements
+
+CONTENT:
+Prospectus must disclose financial and company details.
+
+KEY POINTS:
+- Financial statements
+- Risk factors
+- Director details
+
+RISK:
+- False info → criminal liability
+
+---
+
+SECTION: 42
+TITLE: Private Placement
+
+CONTENT:
+Company can raise funds privately from limited investors.
+
+KEY POINTS:
+- Max 200 persons
+- No public advertisement
+- 60-day allotment rule
+
+RISK:
+- Violation → heavy penalty
+
+---
+
+==============================
+SHARE CAPITAL
+==============================
+
+SECTION: 43
+TITLE: Types of Share Capital
+
+CONTENT:
+Defines types of capital in a company.
+
+KEY POINTS:
+- Authorised capital
+- Issued capital
+- Paid-up capital
+
+RISK:
+- Incorrect reporting → compliance issue
+
+---
+
+SECTION: 55
+TITLE: Preference Shares
+
+CONTENT:
+Rules for redeemable preference shares.
+
+RISK:
+- Wrong redemption → violation
+
+---
+
+SECTION: 62
+TITLE: Further Issue of Shares
+
+CONTENT:
+Shares must be offered to existing shareholders first.
+
+KEY POINTS:
+- Rights issue
+- Preferential allotment
+
+RISK:
+- Ignoring shareholders → illegal
+
+---
+
+SECTION: 66
+TITLE: Reduction of Share Capital
+
+CONTENT:
+Reduction requires NCLT approval.
+
+RISK:
+- Unauthorized reduction → illegal
+
+---
+
+==============================
+COMPLIANCE & PRACTICAL
+==============================
+
+SECTION: STARTUP COMPLIANCE
+
+CONTENT:
+Company must follow:
+- Incorporation process
+- Registered office verification
+- Board meetings
+- Maintain records
+
+RISK:
+- Non-compliance → penalties

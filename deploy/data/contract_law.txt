@@ -1,0 +1,745 @@
+LAW: Indian Contract Act, 1872
+
+Definition:
+- Proposal: When a person expresses willingness to do or not do something to obtain consent.
+- Acceptance: When the other person agrees to the proposal.
+- Promise: Proposal + Acceptance.
+- Consideration: Something given in return for a promise.
+- Agreement: Promise with consideration.
+- Contract: Agreement enforceable by law.
+
+Validity Conditions:
+- Offer + Acceptance must exist
+- Lawful consideration required
+- Free consent required
+- Parties must be competent
+
+Invalid Cases:
+- No consideration → VOID
+- Illegal object → VOID
+- No consent → VOIDABLE
+
+Risk Rules:
+- Missing acceptance → INVALID CONTRACT
+- No consideration → HIGH RISK
+- Illegal terms → HIGH RISK
+
+
+ACT: Indian Contract Act, 1872
+
+==============================
+CHAPTER 1: FORMATION OF CONTRACT
+==============================
+
+SECTION: 2
+TITLE: Definitions
+
+CONTENT:
+Defines fundamental terms in contract law.
+
+KEY POINTS:
+- Proposal: Offer made by one party
+- Acceptance: Agreement to proposal
+- Promise: Proposal + Acceptance
+- Consideration: Value exchanged
+- Agreement: Promise with consideration
+- Contract: Agreement enforceable by law
+
+RISK:
+- Missing elements → INVALID CONTRACT
+
+---
+
+SECTION: 4
+TITLE: Communication Completion
+
+CONTENT:
+Acceptance is complete:
+- Against proposer → when sent
+- Against acceptor → when received
+
+KEY POINTS:
+- Postal rule applies
+- Timing matters in contracts
+
+RISK:
+- Delay → dispute risk
+
+---
+
+SECTION: 6
+TITLE: Revocation
+
+CONTENT:
+A proposal can be revoked by:
+- Notice
+- Lapse of time
+- Failure of condition
+- Death/insanity
+
+RISK:
+- Late revocation → INVALID
+
+---
+
+SECTION: 7
+TITLE: Absolute Acceptance
+
+CONTENT:
+Acceptance must be absolute and unqualified.
+
+KEY POINTS:
+- No changes allowed
+- Must match offer
+
+RISK:
+- Conditional acceptance → INVALID
+
+---
+
+SECTION: 8
+TITLE: Acceptance by Performance
+
+CONTENT:
+Performing conditions of a proposal constitutes acceptance.
+
+RISK:
+- Partial performance → dispute risk
+
+---
+
+SECTION: 9
+TITLE: Express & Implied Promises
+
+CONTENT:
+- Express: Written/oral
+- Implied: By conduct
+
+RISK:
+- No written record → MEDIUM RISK
+
+---
+
+==============================
+CHAPTER 2: VALIDITY OF CONTRACT
+==============================
+
+SECTION: 10
+TITLE: Valid Contract
+
+CONTENT:
+Agreement becomes contract if:
+- Free consent
+- Competent parties
+- Lawful consideration
+- Not void
+
+RISK:
+- Missing condition → INVALID
+
+---
+
+SECTION: 11
+TITLE: Competency
+
+CONTENT:
+Person must be:
+- 18+
+- Sound mind
+- Legally allowed
+
+RISK:
+- Minor contract → VOID
+
+---
+
+SECTION: 13
+TITLE: Consent
+
+CONTENT:
+Parties must agree on same thing in same sense.
+
+RISK:
+- Misunderstanding → INVALID
+
+---
+
+SECTION: 14
+TITLE: Free Consent
+
+CONTENT:
+Consent must not be caused by:
+- Coercion
+- Undue influence
+- Fraud
+- Misrepresentation
+- Mistake
+
+RISK:
+- Forced contract → VOIDABLE
+
+---
+
+SECTION: 17
+TITLE: Fraud
+
+CONTENT:
+Intentional deception.
+
+KEY POINTS:
+- False statements
+- Concealment
+- No intention to perform
+
+RISK:
+- Fraud → HIGH RISK
+
+---
+
+SECTION: 18
+TITLE: Misrepresentation
+
+CONTENT:
+False statement without intent to deceive.
+
+RISK:
+- Misleading → MEDIUM RISK
+
+---
+
+SECTION: 23
+TITLE: Lawful Object
+
+CONTENT:
+Invalid if:
+- Illegal
+- Fraudulent
+- Against public policy
+
+RISK:
+- Illegal contract → VOID
+
+---
+
+SECTION: 25
+TITLE: No Consideration
+
+CONTENT:
+Agreement without consideration is void.
+
+EXCEPTIONS:
+- Love & affection (written)
+- Past voluntary service
+- Time-barred debt
+
+RISK:
+- No consideration → INVALID
+
+---
+
+SECTION: 27
+TITLE: Restraint of Trade
+
+CONTENT:
+Restricting trade is void.
+
+EXCEPTION:
+- Sale of goodwill
+
+RISK:
+- Illegal restriction → VOID
+
+---
+
+SECTION: 29
+TITLE: Uncertainty
+
+CONTENT:
+Unclear agreements are void.
+
+RISK:
+- Ambiguous clause → HIGH RISK
+
+---
+
+==============================
+CHAPTER 3: PERFORMANCE
+==============================
+
+SECTION: 37
+TITLE: Obligation to Perform
+
+CONTENT:
+Parties must perform promises.
+
+RISK:
+- Non-performance → breach
+
+---
+
+SECTION: 39
+TITLE: Anticipatory Breach
+
+CONTENT:
+If party refuses before due date → contract can end.
+
+RISK:
+- Early refusal → HIGH RISK
+
+---
+
+SECTION: 55
+TITLE: Time as Essence
+
+CONTENT:
+Delay makes contract voidable if time is essential.
+
+RISK:
+- Delay → penalty
+
+---
+
+SECTION: 56
+TITLE: Impossibility (Frustration)
+
+CONTENT:
+Impossible contracts are void.
+
+RISK:
+- Impossible task → VOID
+
+---
+
+SECTION: 62
+TITLE: Novation
+
+CONTENT:
+Old contract replaced by new one.
+
+RISK:
+- Improper replacement → invalid
+
+---
+
+SECTION: 63
+TITLE: Waiver
+
+CONTENT:
+Promisee can waive performance.
+
+RISK:
+- Misuse → dispute
+
+---
+
+SECTION: 65
+TITLE: Restitution
+
+CONTENT:
+Benefit must be returned if contract becomes void.
+
+RISK:
+- Unjust enrichment → liability
+
+---
+
+==============================
+CHAPTER 5: QUASI CONTRACTS
+==============================
+
+SECTION: 68
+TITLE: Necessaries
+
+CONTENT:
+Supplier of necessities to incapable person is reimbursed.
+
+RISK:
+- Misuse → claim issue
+
+---
+
+SECTION: 69
+TITLE: Payment by Interested Person
+
+CONTENT:
+Person paying for another can recover money.
+
+RISK:
+- Dispute in reimbursement
+
+---
+
+SECTION: 70
+TITLE: Non-Gratuitous Act
+
+CONTENT:
+If benefit is taken → must compensate.
+
+RISK:
+- Free use assumption → legal liability
+
+
+==============================
+CHAPTER 5: QUASI CONTRACTS (CONTINUED)
+==============================
+
+SECTION: 71
+TITLE: Finder of Goods
+
+CONTENT:
+A person who finds goods and takes custody must take reasonable care and try to find the owner.
+
+RISK:
+- Misuse of found goods → legal liability
+
+---
+
+SECTION: 72
+TITLE: Money Paid by Mistake
+
+CONTENT:
+Money paid by mistake or coercion must be returned.
+
+RISK:
+- Wrong payment retention → HIGH RISK
+
+---
+
+==============================
+CHAPTER 6: BREACH OF CONTRACT
+==============================
+
+SECTION: 73
+TITLE: Compensation for Breach
+
+CONTENT:
+Compensation is given for loss arising naturally from breach.
+
+KEY POINTS:
+- Direct loss compensated
+- No compensation for remote loss
+
+RISK:
+- Breach → financial liability
+
+---
+
+SECTION: 74
+TITLE: Penalty Clause
+
+CONTENT:
+Court awards reasonable compensation even if penalty is defined.
+
+RISK:
+- Excess penalty clause → reduced by court
+
+---
+
+SECTION: 75
+TITLE: Rescission Compensation
+
+CONTENT:
+If contract is rightfully cancelled, compensation can be claimed.
+
+RISK:
+- Improper cancellation → dispute
+
+---
+
+==============================
+CHAPTER 8: INDEMNITY & GUARANTEE
+==============================
+
+SECTION: 124
+TITLE: Contract of Indemnity
+
+CONTENT:
+One party promises to protect another from loss.
+
+RISK:
+- No indemnity clause → HIGH RISK
+
+---
+
+SECTION: 125
+TITLE: Rights of Indemnity Holder
+
+CONTENT:
+Can recover:
+- Damages
+- Costs
+- Settlement amounts
+
+RISK:
+- Missing clause → financial loss
+
+---
+
+SECTION: 126
+TITLE: Contract of Guarantee
+
+CONTENT:
+Guarantee involves:
+- Surety
+- Principal debtor
+- Creditor
+
+RISK:
+- Default → liability on surety
+
+---
+
+SECTION: 128
+TITLE: Liability of Surety
+
+CONTENT:
+Surety liability is equal to debtor.
+
+RISK:
+- Financial burden → HIGH RISK
+
+---
+
+SECTION: 130
+TITLE: Revocation of Guarantee
+
+CONTENT:
+Continuing guarantee can be revoked for future transactions.
+
+RISK:
+- Delay → continued liability
+
+---
+
+SECTION: 133
+TITLE: Discharge of Surety
+
+CONTENT:
+Surety discharged if:
+- Contract terms change
+- Without consent
+
+RISK:
+- Unauthorized change → invalid guarantee
+
+---
+
+SECTION: 140
+TITLE: Right of Subrogation
+
+CONTENT:
+Surety gets rights of creditor after payment.
+
+RISK:
+- Misuse → dispute
+
+---
+
+SECTION: 146
+TITLE: Co-Sureties
+
+CONTENT:
+Multiple sureties share liability equally.
+
+RISK:
+- Unequal payment → legal conflict
+
+---
+
+==============================
+CHAPTER 9: BAILMENT & PLEDGE
+==============================
+
+SECTION: 148
+TITLE: Bailment
+
+CONTENT:
+Goods delivered for purpose and returned after completion.
+
+RISK:
+- Damage/loss → liability
+
+---
+
+SECTION: 151
+TITLE: Care by Bailee
+
+CONTENT:
+Must take reasonable care.
+
+RISK:
+- Negligence → compensation
+
+---
+
+SECTION: 153
+TITLE: Unauthorized Use
+
+CONTENT:
+Unauthorized use makes bailment voidable.
+
+RISK:
+- Misuse → HIGH RISK
+
+---
+
+SECTION: 160
+TITLE: Return of Goods
+
+CONTENT:
+Goods must be returned after purpose.
+
+RISK:
+- Failure → liability
+
+---
+
+SECTION: 170
+TITLE: Particular Lien
+
+CONTENT:
+Bailee can retain goods until paid.
+
+RISK:
+- Non-payment → retention
+
+---
+
+SECTION: 171
+TITLE: General Lien
+
+CONTENT:
+Banks can retain goods for general balance.
+
+RISK:
+- Financial claim → legal hold
+
+---
+
+SECTION: 172
+TITLE: Pledge
+
+CONTENT:
+Goods given as security.
+
+RISK:
+- Default → asset loss
+
+---
+
+SECTION: 176
+TITLE: Pawnee Rights
+
+CONTENT:
+Pawnee can:
+- Sue
+- Sell goods
+
+RISK:
+- Default → sale of asset
+
+---
+
+==============================
+CHAPTER 10: AGENCY
+==============================
+
+SECTION: 182
+TITLE: Agent & Principal
+
+CONTENT:
+Agent acts on behalf of principal.
+
+RISK:
+- Unauthorized action → liability
+
+---
+
+SECTION: 185
+TITLE: No Consideration Needed
+
+CONTENT:
+Agency does not require consideration.
+
+RISK:
+- Informal agreement → dispute
+
+---
+
+SECTION: 186
+TITLE: Authority
+
+CONTENT:
+Authority can be express or implied.
+
+RISK:
+- Misinterpretation → conflict
+
+---
+
+SECTION: 201
+TITLE: Termination of Agency
+
+CONTENT:
+Ends by:
+- Revocation
+- Completion
+- Death
+
+RISK:
+- Unknown termination → legal issue
+
+---
+
+SECTION: 208
+TITLE: Effect of Termination
+
+CONTENT:
+Termination effective when known.
+
+RISK:
+- Delay → unauthorized actions
+
+---
+
+SECTION: 211
+TITLE: Duty of Agent
+
+CONTENT:
+Agent must follow instructions.
+
+RISK:
+- Negligence → liability
+
+---
+
+SECTION: 213
+TITLE: Accounts
+
+CONTENT:
+Agent must maintain records.
+
+RISK:
+- No records → dispute
+
+---
+
+SECTION: 215
+TITLE: Agent Misconduct
+
+CONTENT:
+Agent cannot act for personal gain.
+
+RISK:
+- Secret profit → HIGH RISK
+
+---
+
+SECTION: 226
+TITLE: Principal Liability
+
+CONTENT:
+Principal is bound by agent's actions.
+
+RISK:
+- Agent mistake → principal liable
