@@ -116,19 +116,22 @@ ANSWER:
     return response.content
 
 
-# option fucntion for terinmal work only testing and debbugging
-# if __name__ == "__main__":
-#     debug_db()
+# ==============================
+# TEST RUNNER (OPTIONAL)
+# ==============================
 
-#     while True:
-#         query = input("\nEnter question: ")
+if __name__ == "__main__":
+    debug_db()
 
-#         if query.lower() in ["exit", "quit"]:
-#             break
+    while True:
+        query = input("\nEnter question: ")
 
-#         result = ask_ai(query)
+        if query.lower() in ["exit", "quit"]:
+            break
 
-#         print("\n==============================")
-#         print("LEGAL AI RESPONSE")
-#         print("==============================\n")
-#         print(result)
+        result = ask_ai(query)
+
+        print("\n==============================")
+        print("LEGAL AI RESPONSE")
+        print("==============================\n")
+        print(result)
