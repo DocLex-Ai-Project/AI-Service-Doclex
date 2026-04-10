@@ -2,15 +2,11 @@ import re
 from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings, ChatOllama
 
-# ==============================
-# LOAD EMBEDDINGS
-# ==============================
+#embedding
 
 embedding = OllamaEmbeddings(model="nomic-embed-text")
 
-# ==============================
-# LOAD FAISS DB
-# ==============================
+#fiass database
 
 vector_db = FAISS.load_local(
     "faiss_index",
@@ -18,33 +14,25 @@ vector_db = FAISS.load_local(
     allow_dangerous_deserialization=True
 )
 
-# ==============================
-# LOAD LLM
-# ==============================
+# model will load
 
 llm = ChatOllama(model="llama3:8b")
 
 
-# ==============================
-# DEBUG FUNCTION
-# ==============================
+#debug if necessary
 
 def debug_db():
     print("Total documents:", len(vector_db.docstore._dict))
 
 
-# ==============================
-# SECTION DETECTION
-# ==============================
+#detection  extract matching group
 
 def extract_section(query: str):
     match = re.search(r"section\s*(\d+)", query.lower())
     return match.group(1) if match else None
 
 
-# ==============================
-# LAW DETECTION
-# ==============================
+# secction Wise 
 
 def detect_law(query: str):
     q = query.lower()
@@ -59,9 +47,7 @@ def detect_law(query: str):
         return "General Legal"
 
 
-# ==============================
-# RETRIEVE CONTEXT
-# ==============================
+#retrive karnar context 
 
 def retrieve_context(query: str):
     section = extract_section(query)
@@ -79,41 +65,41 @@ def retrieve_context(query: str):
     return context
 
 
-# ==============================
+
 # ASK AI FUNCTION
-# ==============================
+
 
 def ask_ai(query: str):
-#     context = retrieve_context(query)
+    context = retrieve_context(query)
 
-#     prompt = f"""
-# You are an Indian legal AI assistant.
+    prompt = f"""
+You are an Indian legal AI assistant.
 
-# Rules:
-# - Answer ONLY from CONTEXT
-# - Do NOT hallucinate
-# - If section not found → say "Section not available in dataset"
-# - If insufficient → say "insufficient information"
-# - Explain in simple legal language
+Rules:
+- Answer ONLY from CONTEXT
+- Do NOT hallucinate
+- If section not found → say "Section not available in dataset"
+- If insufficient → say "insufficient information"
+- Explain in simple legal language
 
-# Format:
-# - Section (if applicable)
-# - Explanation
-# - Key Points
-# - Risk (if any)
+Format:
+- Section (if applicable)
+- Explanation
+- Key Points
+- Risk (if any)
 
-# CONTEXT:
-# {context}
+CONTEXT:
+{context}
 
-# QUESTION:
-# {query}
+QUESTION:
+{query}
 
-# ANSWER:
-# """
+ANSWER:
+"""
 
-#     response = llm.invoke(prompt)
+    response = llm.invoke(prompt)
 
-   return "AI service running (LLM will be connected soon)"
+    return response.content
 
 
 # ==============================
